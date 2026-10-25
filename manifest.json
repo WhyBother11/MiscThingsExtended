@@ -1,0 +1,12 @@
+{
+    "UniqueID": "WhyBother11.MTE",
+    "Name": "Misc Things Extended",
+    "Author": "WhyBother11",
+    "Version": "1.0.0",
+    "Description": "Miscellaneous",
+    "MinimumApiVersion": "4.5.2",
+    "EntryDll": "MiscThingsExtended.dll",
+    "UpdateKeys": [
+        "Nexus:?????",
+    ]
+}

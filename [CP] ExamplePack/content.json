@@ -1,0 +1,42 @@
+{
+    "Format": "2.8.0",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Mods/WhyBother11.MTE/NPCGiftingExtensionData",
+            "Fields": {
+                "Abigail": {
+                    "Extensions": [
+                        {
+                            "Condition": "LOCATION_NAME Here SeedShop, ITEM_ID Input 80",
+                            "Actions": [
+                                "AddFriendshipPoints Abigail 1000"
+                            ],
+                            "OverrideTaste": "Hated",
+                            "OverrideFriendshipPoints": "1000",
+                            "OverrideDialogueLine": "testLineForGift1"
+                        },
+                        {
+                            "Condition": "LOCATION_NAME Here SeedShop, ITEM_ID Input 80",
+                            "Actions": [
+                                "AddFriendshipPoints Abigail 1000"
+                            ],
+                            "OverrideTaste": "Hated",
+                            "OverrideFriendshipPoints": "1000",
+                            "OverrideDialogueLine": "testLineForGift2",
+                            "Precedence": 2
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries": {
+                "testLineForGift": "Yummy!",
+                "testLineForGift2": "Yuck! And yummy!"
+            }
+        }
+    ]
+}

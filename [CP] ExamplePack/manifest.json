@@ -1,0 +1,15 @@
+{
+    "Name": "MTE Example Pack",
+    "Author": "WhyBother11",
+    "Version": "1.0.0",
+    "UniqueId": "WhyBother11.MTE_Example",
+    "Description": "MTE Example Pack",
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "WhyBother11.MTE"
+        },
+    ]
+}
