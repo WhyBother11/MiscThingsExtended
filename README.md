@@ -4,4 +4,4 @@ A framework mod with miscellaneous things for modders for use with Content Patch
 
 ## Features:
 
-- NPC Gifting Extensions
+- [NPC Gifting Extensions](https://github.com/WhyBother11/MiscThingsExtended/blob/master/docs/NPCGiftingExtensions.md)
