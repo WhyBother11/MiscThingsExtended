@@ -13,4 +13,8 @@
       <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
     </ItemGroup>
 
+    <ItemGroup>
+        <ContentPacks Include="[CP] ExamplePack" Version="$(Version)"/>
+    </ItemGroup>
+
 </Project>
