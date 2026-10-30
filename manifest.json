@@ -2,7 +2,7 @@
     "UniqueID": "WhyBother11.MTE",
     "Name": "Misc Things Extended",
     "Author": "WhyBother11",
-    "Version": "0.1.0",
+    "Version": "0.2.0",
     "Description": "Miscellaneous",
     "MinimumApiVersion": "4.5.2",
     "EntryDll": "MiscThingsExtended.dll",

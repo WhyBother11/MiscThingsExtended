@@ -6,7 +6,7 @@ using StardewModdingAPI;
 using StardewValley;
 using StardewValley.Triggers;
 
-namespace MiscThingsExtended.Framework.Core.Gifts;
+namespace MiscThingsExtended.Framework.Patches;
 
 [HarmonyPatch]
 public static class GiftingPatches
@@ -88,7 +88,7 @@ public static class GiftingPatches
                     matcher.Advance(2);
                     matched = true;
                 }
-                catch (Exception _)
+                catch (Exception)
                 {
                     matched = false;
                 }
@@ -110,6 +110,7 @@ public static class GiftingPatches
             return matcher.Instructions();
         } catch(Exception e)
         {
+            Log.Log($"Failed to inject gifting patch. Exception:\n{e}", LogLevel.Error);
             return instructions;
         }
     }

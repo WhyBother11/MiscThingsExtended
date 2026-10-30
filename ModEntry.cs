@@ -29,6 +29,20 @@ public class ModEntry : Mod
         var dataAssetClasses = Assembly.GetExecutingAssembly().GetTypes()
             .Where(t => t.IsDefined(typeof(DataAsset)));
         RegisterDataAssets(dataAssetClasses);
+        
+        var registrableClasses = Assembly.GetExecutingAssembly().GetTypes()
+            .Where(t => t.IsDefined(typeof(Registrable)));
+        Register(registrableClasses);
+    }
+    
+    private static void Register(IEnumerable<Type> types)
+    {
+        foreach (var type in types)
+        {
+            var registerMethod = type.GetMethods(BindingFlags.Public | BindingFlags.Static)
+                .First(m => m.Name == "Register");
+            registerMethod.Invoke(null, new object[]{ ModBindings.Helper });
+        }
     }
     
     private static void RegisterMethods(IEnumerable<MethodInfo> methods)

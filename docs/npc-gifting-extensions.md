@@ -1,4 +1,5 @@
 ## NPC Gifting Extensions
+
 For NPC gifting related extensions, you should target `Mods/WhyBother11.MTE/NPCGiftingExtensionData`, which is a dictionary
 where key is NPC internal name, as defined in `Data/Characters`, and the value is model described below. This dictionary
 is prepopulated with every currently loaded NPC, so to edit it properly with Content Patcher you have to use `Fields` or `Entries`
@@ -25,4 +26,3 @@ are selected based on `Precedence`.
 | `OverrideTaste`            | `string`       | Overrides NPC gifting taste for given gift if `Condition` is satisfied. Should be one of `Hated`, `Disliked`, `Neutral`, `Liked`, `Loved`.                                                 |
 | `OverrideFriendshipPoints` | `int`          | Overrides received friendship points for given gift if `Condition` is satified.                                                                                                            |
 | `Precedence`               | `int`          | In case `Condition` of multiple `NPCGiftingData` entries are satisfied, entry with highest value is selected for any override field (i.e field starting with `Override`). Defaults to `0`. |
-

@@ -37,6 +37,13 @@
                 "testLineForGift": "Yummy!",
                 "testLineForGift2": "Yuck! And yummy!"
             }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "MapProperties": {
+                "WhyBother11.MTE_Clocks": "4 4 32 32 LooseSprites/Cursors 369 399 5 9 LooseSprites/Cursors 363 395 5 13 20 4 40 32 32 LooseSprites/Cursors 369 399 5 9 LooseSprites/Cursors 363 395 5 13 20"
+            }
         }
     ]
 }
