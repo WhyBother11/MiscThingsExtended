@@ -127,7 +127,6 @@ public static class Clocks
                 Scale = float.Parse(propertyParts[i + 14]),
             });
         }
-        Log.Log($"{propertyParts.Length} clocks", LogLevel.Error);
         return result;
     }
 

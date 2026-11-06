@@ -51,7 +51,7 @@ public static class GiftingPatches
                 var dialogue = __instance.TryGetDialogue(npcGiftingData.OverrideDialogueLine);
                 if (dialogue is not null) 
                     __result = dialogue;
-                else Log.Log($"Unknown dialogue key {npcGiftingData.OverrideDialogueLine}");
+                else Log.Warn($"Unknown dialogue key {npcGiftingData.OverrideDialogueLine}");
                 return false;
             }
         }
@@ -110,7 +110,7 @@ public static class GiftingPatches
             return matcher.Instructions();
         } catch(Exception e)
         {
-            Log.Log($"Failed to inject gifting patch. Exception:\n{e}", LogLevel.Error);
+            Log.Error("Failed to inject gifting patch.", e);
             return instructions;
         }
     }
@@ -124,8 +124,8 @@ public static class GiftingPatches
             {
                 npcGiftingData.Actions.ForEach(action =>
                 {
-                    if (!TriggerActionManager.TryRunAction(action, out var error, out var exception))
-                        Log.Log($"Failed to run action {action}: {error}. Exception:\n{exception}", LogLevel.Error);
+                    if (!TriggerActionManager.TryRunAction(action, out var error, out var e))
+                        Log.Error($"Failed to run action {action}: {error}.", e);
                 });
             }
         }

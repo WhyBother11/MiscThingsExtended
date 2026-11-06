@@ -13,11 +13,14 @@ public class ModEntry : Mod
     #nullable disable
     public static ModEntry Instance { get; private set; }
     
+    public ModLog Log { get; private set; }
+    
     #nullable restore
 
     public override void Entry(IModHelper helper)
     {
         Instance = this;
+        Log = new ModLog(Monitor);
         Harmony harmony = new(ModManifest.UniqueID);
         harmony.PatchAll();
         

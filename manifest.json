@@ -2,8 +2,8 @@
     "UniqueID": "WhyBother11.MTE",
     "Name": "Misc Things Extended",
     "Author": "WhyBother11",
-    "Version": "0.2.0",
-    "Description": "Miscellaneous",
+    "Version": "%ProjectVersion%",
+    "Description": "Miscellaneous things for modders' use",
     "MinimumApiVersion": "4.5.2",
     "EntryDll": "MiscThingsExtended.dll",
     //"UpdateKeys": [

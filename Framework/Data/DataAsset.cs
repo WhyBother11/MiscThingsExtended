@@ -57,7 +57,7 @@ public class DataAsset<TD>
         {
             if (assetName.IsEquivalentTo(_path))
             {
-                Log.Log($"Invalidated asset {assetName}");
+                Log.Trace($"Invalidated asset {assetName}");
                 _data = null;
                 OnInvalidated();
             }

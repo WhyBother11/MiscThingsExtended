@@ -50,7 +50,7 @@ public class NPCGiftingExtensionDataAsset : DataAsset<NPCGiftingExtensionData>
     protected override void Load(AssetRequestedEventArgs e)
     {
         var data = Game1.characterData.ToDictionary(kvp => kvp.Key, _ => new NPCGiftingExtensionData());
-        Log.Log($"Loaded {data.Keys.Count} characters: {string.Join(", ", data.Keys)}");
+        Log.Trace($"Loaded {data.Keys.Count} characters: {string.Join(", ", data.Keys)}");
         e.LoadFrom(() => data, AssetLoadPriority.Exclusive);
     }
 

@@ -11,7 +11,7 @@ public static class ModBindings
     
     public static IManifest Manifest => ModEntry.Instance.ModManifest;
     
-    public static IMonitor Log => ModEntry.Instance.Monitor;
+    public static ModLog Log => ModEntry.Instance.Log;
     
     public static string Id => ModEntry.Instance.ModManifest.UniqueID;
 }
