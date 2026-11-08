@@ -5,3 +5,5 @@ A framework mod with miscellaneous things for modders for use with Content Patch
 ## Features:
 
 - [NPC Gifting Extensions](https://github.com/WhyBother11/MiscThingsExtended/blob/master/docs/NPCGiftingExtensions.md)
+- Some [map properties](https://github.com/WhyBother11/MiscThingsExtended/blob/master/docs/map-properties.md) (currently enabling proper moving clocks)
+- [Mines floor 100 fish](https://github.com/WhyBother11/MiscThingsExtended/blob/master/docs/mine-lava-lake-fish.md)
