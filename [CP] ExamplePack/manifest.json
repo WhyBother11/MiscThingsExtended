@@ -1,7 +1,7 @@
 {
     "Name": "MTE Example Pack",
     "Author": "WhyBother11",
-    "Version": "1.0.0",
+    "Version": "%ProjectVersion%",
     "UniqueId": "WhyBother11.MTE_Example",
     "Description": "MTE Example Pack",
     "ContentPackFor": {

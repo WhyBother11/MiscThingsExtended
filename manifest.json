@@ -4,9 +4,9 @@
     "Author": "WhyBother11",
     "Version": "%ProjectVersion%",
     "Description": "Miscellaneous things for modders' use",
-    "MinimumApiVersion": "4.5.2",
+    "MinimumApiVersion": "4.3.0",
     "EntryDll": "MiscThingsExtended.dll",
-    //"UpdateKeys": [
-    //    "Nexus:?????",
-    //]
+    "UpdateKeys": [
+        "Nexus:55229"
+    ]
 }
